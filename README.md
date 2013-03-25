@@ -1,5 +1,7 @@
 # Slimbox2::Rails
 
+[![Build Status](https://secure.travis-ci.org/rorlab/slimbox2-rails.png)](https://secure.travis-ci.org/rorlab/slimbox2-rails.png)
+
 Gemify Slimbox2 to use with Rails 3.1 asset pipeline.
 
 If you want to see the more information about Slimbox2, click [here](http://www.digitalia.be/software/slimbox2).
