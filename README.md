@@ -14,6 +14,10 @@ With the help of [Example 9](http://www.trips.elusien.co.uk/slimbox2/example9.ht
 
 slimbox2-rails v2.04.x was built with Slimbox v2.04
 
+## Compatibility
+
+Note : Confirmed at jQuery v1.7.1 and was not displayed well at 1.9.x
+
 ## Installation
 
 Add this line to your application's Gemfile:
