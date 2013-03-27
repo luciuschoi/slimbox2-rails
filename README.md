@@ -5,7 +5,7 @@ Gemify Slimbox2 to use with Rails 3.1 asset pipeline.
 If you want to see the more information about Slimbox2, click [here](http://www.digitalia.be/software/slimbox2).
 
 
-With the help of [Example 9](http://www.trips.elusien.co.uk/slimbox2/example9.html) on [Neil’s Slimbox Examples](http://www.trips.elusien.co.uk/slimbox2/), Travis Hydzik has managed to hack together this feature which we are happy about.(v2.04.3)
+With the help of [Example 9](http://www.trips.elusien.co.uk/slimbox2/example9.html) on [Neil’s Slimbox Examples](http://www.trips.elusien.co.uk/slimbox2/), [Travis Hydzik](http://thydzik.com/slimbox2-lightbox-clone-with-automatic-image-resizing/) has managed to hack together this feature which we are happy about.(v2.04.3)
 
  - [Modified Slimbox2 with auto resize JavaScript](http://thydzik.com/downloads/slimbox2-autosize.js)
  - [Modified Slimbox2 with auto resize CSS](http://thydzik.com/downloads/slimbox2-autosize.css)
