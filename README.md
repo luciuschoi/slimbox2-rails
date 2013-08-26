@@ -12,7 +12,7 @@ With the help of [Example 9](http://www.trips.elusien.co.uk/slimbox2/example9.ht
 
 ## Versioning
 
-slimbox2-rails v2.04.x was built with Slimbox v2.04
+slimbox2-rails v2.05.x was built with Slimbox v2.05
 
 ## Compatibility
 
