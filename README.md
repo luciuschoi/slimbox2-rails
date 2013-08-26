@@ -16,7 +16,7 @@ slimbox2-rails v2.05.x was built with Slimbox v2.05
 
 ## Compatibility
 
-Note : Confirmed at jQuery v1.7.1 and was not displayed well at 1.9.x
+Note : jQuery library (version 1.3 or more recent)
 
 ## Installation
 

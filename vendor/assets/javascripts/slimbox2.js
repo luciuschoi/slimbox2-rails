@@ -53,6 +53,7 @@
 	// Open Slimbox with the specified parameters
 	$.slimbox = function(_images, startImage, _options) {
 		options = $.extend({
+			scaler: .8,
 			loop: false,				// Allows to navigate between first and last images
 			overlayOpacity: 0.8,			// 1 is opaque, 0 is completely transparent (change the color in the CSS file)
 			overlayFadeDuration: 400,		// Duration of the overlay fade-in and fade-out animations (in milliseconds)
@@ -189,7 +190,13 @@
 	}
 
 	function animateBox() {
+		var maxwidth = 800;  //added by rorlab
 		center.className = "";
+		if(preload.width > maxwidth) {  // if-condition added by rorlab
+			var c = options.scaler * Math.min($(window).width() / preload.width, $(window).height() / preload.height); //added
+			preload.width  *= c; //added
+			preload.height *= c; //added
+		}
 		$(image).css({backgroundImage: "url(" + activeURL + ")", visibility: "hidden", display: ""});
 		$(sizer).width(preload.width);
 		$([sizer, prevLink, nextLink]).height(preload.height);
@@ -241,3 +248,12 @@
 	}
 
 })(jQuery);
+
+// AUTOLOAD CODE BLOCK (MAY BE CHANGED OR REMOVED)
+if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) {
+	jQuery(function($) {
+		$("a[rel^='lightbox']").slimbox({/* Put custom options here */}, null, function(el) {
+			return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
+		});
+	});
+}
