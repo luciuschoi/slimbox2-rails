@@ -37,7 +37,7 @@ Or install it yourself as:
 To require Slimbox2 UI modules, add the following to your application.js:
 
 ```
-//= require slimbox2
+//= require slimbox2.min
 ```
 
 Also add the Superfish UI CSS to your application.css:

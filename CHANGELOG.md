@@ -1,6 +1,7 @@
 # Changelogs
 
- - v2.05.1 : image auto-resized.
+ - v2.05.2 : image in lightbox auto-resized.
+ - v2.05.1 : lightbox auto-resized.
  - v2.05.0 : upgrade to slimbox2 v2.05
  - v2.04.4 : bug fixed (adding white.gif)
  - v2.04.3 : image auto-resized.

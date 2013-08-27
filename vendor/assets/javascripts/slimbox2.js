@@ -2,6 +2,7 @@
 	Slimbox v2.05 - The ultimate lightweight Lightbox clone for jQuery
 	(c) 2007-2013 Christophe Beyls <http://www.digitalia.be>
 	MIT-style license.
+	Modified to image auto-resized by RORLab (2013.8.26)
 */
 
 (function($) {
@@ -53,7 +54,7 @@
 	// Open Slimbox with the specified parameters
 	$.slimbox = function(_images, startImage, _options) {
 		options = $.extend({
-			scaler: .8,
+			scaler: .8,      // added by rorlab
 			loop: false,				// Allows to navigate between first and last images
 			overlayOpacity: 0.8,			// 1 is opaque, 0 is completely transparent (change the color in the CSS file)
 			overlayFadeDuration: 400,		// Duration of the overlay fade-in and fade-out animations (in milliseconds)
@@ -197,7 +198,9 @@
 			preload.width  *= c; //added
 			preload.height *= c; //added
 		}
-		$(image).css({backgroundImage: "url(" + activeURL + ")", visibility: "hidden", display: ""});
+		// added 'backgroundSize: preload.width,' into $(image).css by rorlab
+		$(image).css({backgroundSize: preload.width, backgroundImage: "url(" + activeURL + ")", visibility: "hidden", display: ""});
+
 		$(sizer).width(preload.width);
 		$([sizer, prevLink, nextLink]).height(preload.height);
 
